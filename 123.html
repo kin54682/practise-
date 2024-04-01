@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Complex Layout Example</title>
+<style>
+    /* Reset styles */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    /* Header styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+    }
+    /* Navigation styles */
+    nav {
+        background-color: #444;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    /* Main content styles */
+    .container {
+        max-width: 940px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Clear floats */
+    }
+    .main-content {
+        float: left;
+        width: 70%;
+        padding: 20px;
+    }
+    .sidebar {
+        float: right;
+        width: 30%;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    .feature {
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    footer p {
+        margin-bottom: 10px;
+    }
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+        .main-content, .sidebar {
+            width: 100%;
+            float: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Advanced Complex Layout Example</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <h2>Main Content</h2>
+        <p>This is the main content area. It occupies 70% width of the page.</p>
+        <div class="feature">
+            <h3>Feature 1</h3>
+            <p>This is a featured content area.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 2</h3>
+            <p>This is another featured content area.</p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>This is the sidebar content. It occupies 30% width of the page.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Advanced Complex Layout Example | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
